@@ -6,9 +6,9 @@ function Article(props) {
     console.log(id)
     return (
         <article key={id}>
-            <h3 key={title}>{title}</h3>
-            <small key={date}>{date}</small>
-            <p key={preview}>{preview}</p>
+            <h3>{title}</h3>
+            <small>{date}</small>
+            <p>{preview}</p>
         </article>
     );
 };

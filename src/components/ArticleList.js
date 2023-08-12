@@ -6,7 +6,7 @@ function ArticleList({ posts }) {
     const articles = posts.map(article => {
         // console.log(article)
         const { title, date, preview, id } = article
-        return <Article id={id} title={title} date={date} preview={preview} />
+        return <Article key={id} id={id} title={title} date={date} preview={preview} />
     })
 
     return (
